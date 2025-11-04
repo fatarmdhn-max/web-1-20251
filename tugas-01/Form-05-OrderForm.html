@@ -120,6 +120,14 @@
         grid-column: span 6;
       }
 
+      .col-11 {
+        grid-column: span 11;
+      }
+
+      .col-1 {
+        grid-column: span 1;
+      }
+
       input[type="color"] {
         padding: 0;
         height: 2.25rem;
@@ -214,7 +222,7 @@
                     required=""
                   />
                 </div>
-                   <div class="col-6">
+                <div class="col-6">
                   <label>Phone</label>
                   <input
                     type="number"
@@ -224,23 +232,23 @@
                     value=""
                   />
                 </div>
-
-                <h1>Order Details</h1>
-
-                <div class="col-12">
-                  <label>Country</label>
+              </div>
+              <h1>Order Details</h1>
+              <div class="row">
+                <div class="col-11">
+                  <label>Product</label>
                   <select>
-                    <option value="Select Country" selected disabled>
-                      Select Country
+                    <option value="Select A product" selected disabled>
+                      Select A product
                     </option>
-                    <option>Indonesia</option>
-                    <option>Malaysia</option>
-                    <option>Singapore</option>
+                    <option>Wardah</option>
+                    <option>Makeup</option>
+                    <option>Hijab</option>
                   </select>
                 </div>
-                <div class="col-12">
+                <div class="col-1">
                   <label>Quantity</label>
-                  <input type="text" placeholder="DD/MM/YYYY" required="" />
+                  <input type="text" placeholder="1" required="" />
                 </div>
               </div>
               <div>
@@ -264,7 +272,7 @@
                   >
                 </div>
               </div>
-                <div>
+              <div>
                 <h4 style="margin-bottom: 0">Color</h4>
                 <div class="row-checkbox">
                   <label for="">
@@ -273,11 +281,11 @@
                   >
                   <label for="">
                     <input type="checkbox" name="Blue" id="Blue" />
-                   Blue</label
+                    Blue</label
                   >
                   <label for="">
                     <input type="checkbox" name="Green" id="Green" />
-                Green</label
+                    Green</label
                   >
                   <label for="">
                     <input type="checkbox" name="Black" id="Black" />
@@ -285,35 +293,38 @@
                   >
                 </div>
               </div>
-            <h4 style="margin-bottom: 0">Additional comments</h4>
-              <input
-                    type="text"
-                    placeholder="Enter any Additional comments or instructions"
-                    required=""
-                  />
-                </div>
-                 <h1>   Payment Details</h1>
-               
-                <div class="col-12">
-                  <label>Payment Method</label>
-                  <select>
-                    <option value="Select a Payment Method" selected disabled>
-                      Select a Payment Method
-                    </option>
-                    <option>BCA</option>
-                    <option>BRI</option>
-                    <option>MANDIRI</option>
-                  </select>
-                </div>
+              <h4 style="margin-bottom: 0">Additional comments</h4>
+              <textarea
+                placeholder="Enter any additional comments or instructions"
+              ></textarea>
+              <div class="row"></div>
+              <h1>Payment Details</h1>
 
+              <div class="col-12">
+                <label>Payment Method</label>
+                <select>
+                  <option value="Select a Payment Method" selected disabled>
+                    Select a Payment Method
+                  </option>
+                  <option>BCA</option>
+                  <option>BRI</option>
+                  <option>MANDIRI</option>
+                </select>
+              </div>
 
               <div style="margin-top: 20px">
                 <label for="">
                   <input type="checkbox" name="agree" id="agree" />
-                  I accept the terms and conditions </label
-                >
+                  I accept the terms and conditions
+                </label>
               </div>
-              <div style="display: flex; justify-content: center">
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  margin-top: 0.75rem;
+                "
+              >
                 <input
                   type="submit"
                   value="Register Now!"
