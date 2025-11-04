@@ -199,9 +199,8 @@
       <section>
         <form action="" method="">
           <fieldset>
-            <>
             <h1>Volunteer Sign Up Form</h1>
-            <p>Please fill out the form below to become a Volunteer</p>
+            <p>Please fill out the following form to become a Volunteer</p>
             <div class="row">
               <div class="col-6">
                 <label>First Name</label>
@@ -303,11 +302,9 @@
               <h4>Skill and Interest</h4>
               <div class="col-12">
                 <label>Skills and experience</label>
-                <input
-                  type="text"
-                  placeholder="Enter your skill and experience"
-                  required=""
-                />
+                <textarea
+                  placeholder="Enter your Skills and experience"
+                ></textarea>
                 <small
                   >Please describe your skills and experience. if any, that
                   would be relevant to the volunteer role</small
@@ -346,20 +343,25 @@
                 <input type="checkbox" name="Poverty" id="Poverty" />
                 Poverty</label
               >
-              </div>
-              <div style="margin-top: 20px">
-                <label for="">
-                  <input type="checkbox" name="agree" id="agree" />
-                  I agree to the terms and conditions of this event</label
-                >
-              </div>
-              <div style="display: flex; justify-content: center">
-                <input
-                  type="submit"
-                  value="Register Now!"
-                  style="background-color: #2196f3"
-                />
-              </div>
+            </div>
+            <div style="margin-top: 20px">
+              <label for="">
+                <input type="checkbox" name="agree" id="agree" />
+                I agree to the terms and conditions of this event</label
+              >
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                margin-top: 0.75rem;
+              "
+            >
+              <input
+                type="submit"
+                value="Register Now!"
+                style="background-color: #2196f3"
+              />
             </div>
           </fieldset>
         </form>
